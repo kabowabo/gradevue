@@ -20,6 +20,7 @@
 	import MailBoxOutline from 'flowbite-svelte-icons/MailBoxOutline.svelte';
 	import MapPinAltOutline from 'flowbite-svelte-icons/MapPinAltOutline.svelte';
 	import UserCircleOutline from 'flowbite-svelte-icons/UserCircleOutline.svelte';
+	import AdjustmentsVerticalOutline from 'flowbite-svelte-icons/AdjustmentsVerticalOutline.svelte'
 	import type { Component, Snippet } from 'svelte';
 	import { installPrompt } from '../../hooks.client';
 	import { getCurrentGradebookState, gradebooksState } from './grades/gradebook.svelte';
@@ -110,6 +111,8 @@
 			{@render sidebarLink('Documents', '/documents', FolderOpenOutline)}
 
 			{@render sidebarLink('Mail', '/mail', MailBoxOutline)}
+
+			{@render sidebarLink('GPA', '/gpa', AdjustmentsVerticalOutline)}
 		</SidebarGroup>
 
 		<SidebarGroup>
